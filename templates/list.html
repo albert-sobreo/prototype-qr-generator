@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+
+    <script type="text/javascript" src="../static/qr-gen.js"></script>
+    <script type="text/javascript" src="../static/list.js"></script>
+
+
+  </head>
+  <body>
+    <style media="screen">
+    .container {
+      font-family: helvetica;
+      width: 500px;
+      margin: 40px auto;
+    }
+    .container *{
+      font-family: inherit;
+      font-size: inherit;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    table{
+      text-align: left;
+      border: 1px solid grey;
+      width: 100%;
+      padding: 7px;
+
+    }
+    tr{
+      padding: 7px;
+    }
+
+
+
+    </style>
+
+    <div class="container">
+
+        <table>
+
+
+          <tr>
+            <th>Name</th>
+            <th>Code</th>
+            <th>QR</th>
+          </tr>
+
+          <!-- Loop: Use Attributes instead-->
+          <tr name="sample-1" code="secret-1" class="item">
+          <tr name="sample-2" code="secret-2" class="item">
+          <tr name="sample-3" code="secret-3" class="item">
+
+          </tr>
+          <!-- Loop -->
+
+
+
+        </table>
+
+
+    </div>
+    <div id="qr"></div>
+
+
+
+
+  </body>
+</html>
