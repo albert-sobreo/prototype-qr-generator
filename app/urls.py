@@ -4,7 +4,8 @@ from app import views
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 
 urlpatterns = [
-    path('', views.hello)
+    path('', views.input),
+    path('inputprocess/', views.input_process)
 ]
 
 urlpatterns += staticfiles_urlpatterns()

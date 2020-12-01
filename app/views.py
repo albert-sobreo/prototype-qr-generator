@@ -18,6 +18,8 @@ def input_process(request):
             item.save()
 
             return JsonResponse({'message': 'Success'})
+        except:
+            return JsonResponse({'message': 'Something went wrong'})
 
 def list_items(request):
     context = {
