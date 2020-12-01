@@ -25,7 +25,7 @@ def input_process(request):
 
 def list_items(request):
     context = {
-        'item': Item.objects.all()
+        'items': Item.objects.all()
     }
 
-    return render(request, '', context)
+    return render(request, 'list.html', context)

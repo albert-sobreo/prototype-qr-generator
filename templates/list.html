@@ -50,11 +50,11 @@
           </tr>
 
           <!-- Loop: Use Attributes instead-->
-          <tr name="sample-1" code="secret-1" class="item">
-          <tr name="sample-2" code="secret-2" class="item">
-          <tr name="sample-3" code="secret-3" class="item">
+          {%for item in items %}
 
-          </tr>
+          <tr name="{{item.item_name}}" code="{{item.item_code}}" class="item"></tr>
+
+          {%endfor %}
           <!-- Loop -->
 
 
