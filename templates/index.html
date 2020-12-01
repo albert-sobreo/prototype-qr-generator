@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+
+    <script type="text/javascript" src="../static/qr-gen.js"></script>
+    <script type="text/javascript" src="../static/index.js"></script>
+
+
+  </head>
+  <body>
+    <style media="screen">
+    .container {
+      font-family: helvetica;
+      width: 500px;
+      margin: 40px auto;
+    }
+    .container *{
+      font-family: inherit;
+      font-size: inherit;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    input{
+      border: 1px solid grey;
+      width: 100%;
+      padding: 7px;
+
+    }
+    button{
+      margin: auto;
+      padding: 7px;
+
+      width: 100%;
+    }
+
+
+
+    </style>
+
+    <div class="container">
+
+        <label for="name">Item Name</label>
+        <input type="text" name="name" id="name" value="" placeholder="Item Name">
+        <br><br>
+        <label for="code">Item Code</label>
+        <input type="text" name="code" value="" id="code" placeholder="Item Code">
+        <button type="button" name="button" id="create">Submit</button>
+    </div>
+    <div id="qr"></div>
+
+
+
+
+  </body>
+</html>
