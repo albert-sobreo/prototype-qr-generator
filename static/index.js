@@ -18,6 +18,8 @@ window.onload = function(){
       alert('empty slot');
       return;
     }
+    qrcode.makeCode(`${name}::${code}`);
+
 
     const data = { code: code, name:name };
 // Fetch
@@ -32,7 +34,7 @@ window.onload = function(){
     .then(data => {
       console.log('Success:', data);
       if(data.message == 'Success'){
-        qrcode.makeCode(`${name}::${code}`);
+        alert('Success')
       }
       else{
         alert('server miscommunication')
