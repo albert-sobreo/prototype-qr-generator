@@ -35,10 +35,36 @@
     }
 
 
+    nav{
+      display: flex;
+      padding: 7px;
+    }
+
+    nav > a{
+      width: 100%;
+      display: block;
+      text-align: center;
+      border-bottom: 3px solid white;
+      text-decoration: none;
+      
+    }
+
+    #active{
+      border-color: black;
+    }
 
     </style>
 
     <div class="container">
+      <nav>
+        <a href="/">
+          Inputs
+        </a>
+        <a id="active">
+          Lists
+        </a>
+      </nav>
+      <br>
 
         <table>
 
@@ -63,7 +89,6 @@
 
 
     </div>
-    <div id="qr"></div>
 
 
 

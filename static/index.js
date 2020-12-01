@@ -1,6 +1,5 @@
 window.onload = function(){
 
-  alert('welcome');
   var qrcode = new QRCode("qr", {
     text: "sample",
     width: 128,

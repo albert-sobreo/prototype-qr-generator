@@ -20,36 +20,68 @@
     .container *{
       font-family: inherit;
       font-size: inherit;
-      border-radius: 4px;
       box-sizing: border-box;
     }
     input{
       border: 1px solid grey;
       width: 100%;
       padding: 7px;
+      border-radius: 4px;
+
 
     }
     button{
+      border-radius: 4px;
+
       margin: auto;
       padding: 7px;
 
       width: 100%;
     }
 
+    nav{
+      display: flex;
+      padding: 7px;
+    }
 
+    nav > a{
+      width: 100%;
+      display: block;
+      text-align: center;
+      border-bottom: 3px solid white;
+      text-decoration: none;
+    }
+
+    #active{
+      border-color: black;
+    }
 
     </style>
 
     <div class="container">
+      <nav>
+        <a id="active">
+          Inputs
+        </a>
+        <a href="/list.html">
+          Lists
+        </a>
+      </nav>
+        <br>
 
         <label for="name">Item Name</label>
         <input type="text" name="name" id="name" value="" placeholder="Item Name">
         <br><br>
         <label for="code">Item Code</label>
         <input type="text" name="code" value="" id="code" placeholder="Item Code">
+        <br><br>
+        <center>
+          <div id="qr"></div>
+        </center>
+        <br>
         <button type="button" name="button" id="create">Submit</button>
     </div>
-    <div id="qr"></div>
+
 
 
 
