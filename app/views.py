@@ -1,19 +1,21 @@
 from django.http.response import JsonResponse
-from django.shortcuts import render, HttpResponse, JsonResponse
+from django.shortcuts import render, HttpResponse
+from django.http import JsonResponse
 import json
 from .models import Item
 
 def input(request):
-    return render(request, '', {})
+    return render(request, 'index.html', {})
 
 def input_process(request):
     if request.method == "POST":
         try:
             data = json.loads(request.body)
+            print(data)
 
             item = Item()
-            item.item_code = data['item_code']
-            item.item_name = data['item_name']
+            item.item_code = data['code']
+            item.item_name = data['name']
 
             item.save()
 

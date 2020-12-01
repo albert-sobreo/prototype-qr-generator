@@ -21,7 +21,7 @@ window.onload = function(){
 
     const data = { code: code, name:name };
 // Fetch
-    fetch('/inputprocess', {
+    fetch('/inputprocess/', {
       method: 'POST', // or 'PUT'
       headers: {
         'Content-Type': 'application/json',
@@ -31,7 +31,7 @@ window.onload = function(){
     .then(response => response.json())
     .then(data => {
       console.log('Success:', data);
-      if(data.message == 'Success')){
+      if(data.message == 'Success'){
         qrcode.makeCode(`${name}::${code}`);
       }
       else{
